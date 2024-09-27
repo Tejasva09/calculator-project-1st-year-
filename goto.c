@@ -2,36 +2,36 @@
 int main()
 {
     float a,b;
-    int ch;
-    int op;
+    char ch;
+    char op;
     lable:
     printf("enter the value of a:");
     scanf("%f",&a);
     printf("enter the value of b:");
     scanf("%f",&b);
     printf("enter the funtion:\n");
-    scanf("%d",&ch);
-    if(ch==1)
+    scanf("%c",&ch);
+    if(ch=='+')
     {
       goto plus;
     }
-    if(ch==2)
+    if(ch=='-')
     {
        goto minus;
     }
-    if(ch==3)
+    if(ch=='*')
     {
         goto product;
     }
-    if(ch==4)
+    if(ch=='/')
     {
        goto divide;
     }
     plus:
     printf("%f",a+b);
       printf("\ndo you want to continue:");
-     scanf("%d",&op);
-     if (op==1)
+     scanf("%c",&op);
+     if (op=="yes")
     {
         goto lable;
     }else 
@@ -41,8 +41,8 @@ int main()
     minus:
     printf("%f",a-b);
     printf("\ndo you want to continue:");
-     scanf("%d",&op);
-     if (op==1)
+     scanf("%c",&op);
+     if (op=="yes")
     {
         goto lable;
     }else 
@@ -52,8 +52,8 @@ int main()
     product:
     printf("%f",a*b);
     printf("\ndo you want to continue:");
-     scanf("%d",&op);
-     if (op==1)
+     scanf("%c",&op);
+     if (op=="yes")
     {
         goto lable;
     }else 
@@ -63,8 +63,8 @@ int main()
     divide:
     printf("%f",a/b);  
     printf("\ndo you want to continue:");
-     scanf("%d",&op);
-     if (op==1)
+     scanf("%c",&op);
+     if (op=="yes")
     {
         goto lable;
     }else 
